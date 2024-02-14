@@ -1,0 +1,28 @@
+.siderbarItem {
+    @apply hidden mb-1 lg:flex justify-center items-center relative rounded-2xl w-[72px] h-[72px];
+    transition: all .2s linear;
+    &.active {
+        background: rgb(232, 235, 237);
+    }
+
+    &:hover {
+        @apply cursor-pointer;
+        background: rgb(232, 235, 237);
+    }
+}
+
+.siderbarItem label {
+    @apply w-[62px] h-[62px] flex flex-col items-center justify-center;
+
+    &:hover {
+        @apply cursor-pointer;
+    }
+}
+
+.siderbarItem label span {
+    @apply text-[12px] font-medium;
+}
+
+.siderbarItem input {
+    @apply absolute hidden
+}

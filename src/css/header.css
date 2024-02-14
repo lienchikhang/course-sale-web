@@ -1,0 +1,71 @@
+.header {
+    @apply flex justify-between items-center py-3;
+}
+
+.header__left {
+    @apply flex justify-between items-center flex-1
+}
+
+.header__left .header__menu {
+    @apply md:mr-4 lg:hidden;
+}
+
+/*header__logo*/
+.header__logo {
+    @apply hidden lg:flex lg:items-center lg:mr-1;
+}
+
+.header__logo img {
+    @apply block w-[38px] h-[38px] mr-3 object-cover rounded-md;
+}
+
+.header__logo h1 {
+    @apply font-bold;
+}
+/*header__logo*/
+
+/*header__search*/
+.header__search {
+    @apply hidden md:flex px-3 py-2 items-center w-[450px] rounded-full;
+    border: 2px solid #e8e8e8;
+    transition: .2s all linear;
+    &:focus-within {
+        border-color: #444;
+    }
+}
+
+.header__search svg {
+    @apply mr-2;
+}
+
+.header__search input {
+    @apply outline-none w-full;
+}
+/*header__search*/
+
+.header__smallSearch {
+    @apply block md:hidden
+}
+
+/*header__actions*/
+.header__right {
+    @apply flex items-center md:w-[50%] md:justify-end lg:w-[30%];
+}
+
+.header__actions {
+    @apply flex items-center px-4;
+}
+
+.header__actions button {
+    @apply font-medium px-4 py-2 rounded-full;
+
+    &:last-child {
+        @apply bg-orange-500 text-white
+    }
+
+    &:first-child {
+        @apply hidden md:block;
+    }
+}
+
+
