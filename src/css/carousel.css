@@ -6,13 +6,16 @@
     @apply rounded-2xl flex justify-between items-center p-14  bg-slate-600;   
 }
 
-.mySwiperItem .mySwiperItem__left,
+.mySwiperItem .mySwiperItem__left {
+    @apply w-full lg:w-1/2
+}
+
 .mySwiperItem .mySwiperItem__right {
-    @apply w-1/2;
+    @apply hidden lg:block lg:w-1/2
 }
 
 .mySwiperItem h2 {
-    @apply font-bold text-4xl mb-6 text-white;
+    @apply font-bold text-3xl lg:text-4xl mb-6 text-white;
 }
 
 .mySwiperItem p {
@@ -25,7 +28,7 @@
 }
 
 .mySwiperItem img {
-    @apply h-[240px]
+    @apply h-[240px] object-cover
 }
 
  .swiper-button-next,
@@ -51,7 +54,7 @@
 .swiper-pagination {
     width: unset !important;
     left: 60px !important;
-    bottom: 20px !important;
+    @apply !bottom-5
 }
 
 .swiper-pagination .swiper-pagination-bullet {

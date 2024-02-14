@@ -8,7 +8,7 @@ import backgroundConstants from "../constants/background.constants";
 
 const Carousel: React.FC = () => {
   return (
-    <section className="pr-8">
+    <section className="lg:pr-8">
       <Swiper
         navigation={true}
         pagination={true}

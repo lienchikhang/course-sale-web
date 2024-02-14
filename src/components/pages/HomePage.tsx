@@ -6,11 +6,11 @@ const HomePage: React.FC = () => {
   return (
     <section className="homepage">
       <div className="grid grid-cols-12 py-4">
-        <div className="col-span-1 fixed">
+        <div className="col-span-1 fixed h-screen">
           <Sidebar />
         </div>
         <div className="col-span-1 visible-div"></div>
-        <div className="col-span-11">
+        <div className="col-span-12 lg:col-span-11">
           <Outlet />
         </div>
       </div>
