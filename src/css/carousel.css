@@ -28,7 +28,7 @@
 }
 
 .mySwiperItem img {
-    @apply h-[240px] object-cover
+    @apply h-[240px] object-cover float-right;
 }
 
  .swiper-button-next,

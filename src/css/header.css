@@ -1,5 +1,9 @@
+.header__wrapper {
+    @apply w-full bg-white fixed z-50;
+}
+
 .header {
-    @apply flex justify-between items-center py-3;
+    @apply w-[96%] mx-auto flex justify-between items-center py-3 bg-white top-0;
 }
 
 .header__left {

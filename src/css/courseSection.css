@@ -1,0 +1,11 @@
+.courseSection {
+    @apply w-[90%] ml-[3%] mr-auto;
+}
+
+.courseSection h2 {
+    @apply text-2xl font-bold;
+}
+
+.courseSection__title {
+    @apply flex justify-between items-center
+}

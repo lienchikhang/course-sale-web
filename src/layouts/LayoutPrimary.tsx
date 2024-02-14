@@ -6,15 +6,13 @@ import { Footer, Header } from "../components";
 const LayoutPrimary: React.FC = () => {
   return (
     <React.Fragment>
-      <Container maxWidth="xl">
-        <Header />
-      </Container>
+      <Header />
       <div className="py-4 p-4 sm:p-6 lg:p-0">
         <Outlet />
       </div>
-      <Container maxWidth="xl">
+      <div className="bg-slate-950 flex flex-col">
         <Footer />
-      </Container>
+      </div>
     </React.Fragment>
   );
 };

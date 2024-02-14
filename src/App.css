@@ -5,4 +5,5 @@ body {
 
 .visible-div {
   @apply hidden lg:block;
+  position: -webkit-sticky;
 }

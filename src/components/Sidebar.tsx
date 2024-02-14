@@ -11,10 +11,8 @@ const Sidebar: React.FC = () => {
     actT ? JSON.parse(actT) : { active: "home" }
   );
 
-  console.log("active", activeTab);
-
   return (
-    <React.Fragment>
+    <div className="sticky top-[74px]">
       <Box sx={{ bgcolor: "#fff", padding: "0 8px" }}>
         {sidebarConstants.actions.map((action, index) => {
           return (
@@ -27,7 +25,7 @@ const Sidebar: React.FC = () => {
           );
         })}
       </Box>
-    </React.Fragment>
+    </div>
   );
 };
 
