@@ -5,6 +5,7 @@ import HomePage from "./components/pages/HomePage";
 import HomeTab from "./components/HomeTab";
 import HomeRoadMap from "./components/HomeRoadMap";
 import HomePosts from "./components/HomePosts";
+import DetailCoursePage from "./components/pages/DetailCoursePage";
 
 function App() {
   return (
@@ -12,12 +13,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LayoutPrimary />}>
-            <Route path="" element={<Navigate to="home" />} />
-            <Route path="home" element={<HomePage />}>
-              <Route path="" element={<HomeTab />} />
-              <Route path="roadmap" element={<HomeRoadMap />} />
-              <Route path="posts" element={<HomePosts />} />
-            </Route>
+            {/* <Route path="" element={<Navigate to="home" />} /> */}
+            <Route path="" element={<HomeTab />} />
+            <Route path="roadmap" element={<HomeRoadMap />} />
+            <Route path="posts" element={<HomePosts />} />
+            <Route path="courses/:courseId" element={<DetailCoursePage />} />
           </Route>
         </Routes>
       </BrowserRouter>

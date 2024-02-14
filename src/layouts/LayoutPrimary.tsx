@@ -2,13 +2,21 @@ import { Container } from "@mui/system";
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "../components";
+import Sidebar from "../components/Sidebar";
 
 const LayoutPrimary: React.FC = () => {
   return (
     <React.Fragment>
       <Header />
-      <div className="py-4 p-4 sm:p-6 lg:p-0">
-        <Outlet />
+      <div className="grid grid-cols-12 p-4 sm:p-6 lg:py-4 lg:px-0">
+        <div className="visible-div">
+          <Sidebar />
+        </div>
+        {/* <div className="col-span-1 visible-div"></div> */}
+        <div className="col-span-12 lg:col-span-11 mt-[58px]">
+          <Outlet />
+        </div>
+        {/* <Outlet /> */}
       </div>
       <div className="bg-slate-950 flex flex-col">
         <Footer />

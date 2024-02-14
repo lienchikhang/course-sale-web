@@ -3,8 +3,8 @@ import { ICourseSection } from "../interfaces/courseSection.interface";
 import "../css/courseSection.css";
 import CourseList from "./CourseList";
 import { useQuery } from "react-query";
-import Fetching from "../classes/Fetching";
-const fetch = new Fetching();
+import Service from "../classes/Service";
+const service = new Service();
 
 const CourseSection: React.FC<ICourseSection> = ({ courseSection }) => {
   const [courses, setCourses] = useState([]);
