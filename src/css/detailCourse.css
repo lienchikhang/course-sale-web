@@ -1,13 +1,13 @@
 .detailCourse {
-    @apply grid grid-cols-12 gap-10 mt-6;
+    @apply grid grid-cols-12 gap-10 mt-6 px-10;
 }
 
 .detailCourse .content {
-    @apply col-span-8;
+    @apply col-span-12 xl:col-span-8;
 }
 
 .content__title {
-    @apply text-3xl font-bold my-4;
+    @apply text-4xl font-bold my-4;
 }
 
 .content__desc {
@@ -23,7 +23,7 @@
 }
 
 .advantages .advantages__item {
-    @apply w-[40%] flex items-start;
+    @apply w-full md:w-[45%] xl:w-[40%] flex items-start;
 }
 
 .advantages__item svg {
@@ -116,6 +116,52 @@
 }
 
 .detailCourse .general {
-    @apply col-span-4;
+    @apply col-span-12 hidden xl:block xl:col-span-4 px-8;
 }
 
+.general__wrapper {
+    @apply sticky top-[68px] mb-72;
+}
+
+.general__introduce {
+    @apply relative;
+}
+
+.general__introduce img {
+    @apply mx-auto rounded-xl;
+}
+
+.general__introduce svg {
+    @apply text-7xl font-bold text-white text-center absolute top-1/2 left-1/2;
+    transform: translate(-50%, -50%);
+}
+
+.general__introduce p {
+    @apply text-xl font-bold text-white w-full text-center absolute bottom-2;
+}
+
+.general__register {
+    @apply text-center mt-8;;
+}
+
+.general__register p {
+    @apply w-3/4 mx-auto mb-4 p-1 font-bold text-2xl text-white bg-orange-500 rounded-full;
+}
+
+.general__register button {
+    @apply mx-auto mb-8 px-6 py-2 font-bold text-2xl text-white rounded-full;
+    background-color: #f05123;
+}
+
+.general__detail p {
+    @apply text-sm xl:text-base w-[80%] text-center mx-auto text-left mb-4;
+}
+
+.general__detail p svg {
+    @apply  mr-4 ;
+}
+
+.sub-general__wrapper {
+    @apply xl:hidden mb-12 rounded-xl p-8;
+    border: 1px solid black;
+}

@@ -205,12 +205,13 @@ const detailCourseConstants = {
         'Ý thức cao, trách nhiệm cao trong việc tự học. Thực hành lại sau mỗi bài học'
     ],
     general: {
-        thumbnail: '', //url img
+        thumbnail: 'https://files.fullstack.edu.vn/f8-prod/courses/12.png', //url img
         totalParts: 12, //number
-        totalTime: 1230000, //second
+        totalTime: 12300, //second
         retail: 150000, //number
         sale: 130000, //number
         studentCounts: 0,
+        level: 1, //no need
     }
 }
 

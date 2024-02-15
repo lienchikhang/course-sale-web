@@ -4,6 +4,11 @@ import detailCourseConstants from "../../constants/detailCourse.constants";
 import DoneIcon from "@mui/icons-material/Done";
 import List from "@mui/material/List";
 import DetailCollapse from "../DetailCollapse";
+import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import ChargingStationIcon from "@mui/icons-material/ChargingStation";
+import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
+import VideocamIcon from "@mui/icons-material/Videocam";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 
 const DetailCoursePage: React.FC = () => {
   return (
@@ -12,6 +17,50 @@ const DetailCoursePage: React.FC = () => {
         <div className="wrapper">
           <h1 className="content__title">{detailCourseConstants.title}</h1>
           <p className="content__desc">{detailCourseConstants.desc}</p>
+
+          <div className="sub-general__wrapper">
+            <div className="general__introduce">
+              <img src={detailCourseConstants.general.thumbnail} alt="" />
+              <PlayCircleIcon />
+              <p>Xem giới thiệu khóa học</p>
+            </div>
+            <div className="general__register">
+              <button>ĐĂNG KÝ HỌC</button>
+            </div>
+            <div className="general__detail">
+              <p>
+                <WorkspacePremiumIcon />
+                <span>
+                  Trình độ{" "}
+                  <strong>
+                    {detailCourseConstants.general.level == 1 && "cơ bản"}
+                    {detailCourseConstants.general.level == 2 && "bình thường"}
+                    {detailCourseConstants.general.level == 3 && "nâng cao"}
+                  </strong>
+                </span>
+              </p>
+              <p>
+                <VideocamIcon />
+                <span>
+                  Tổng số{" "}
+                  <strong>{detailCourseConstants.general.totalParts}</strong>{" "}
+                  bài học
+                </span>
+              </p>
+              <p>
+                <AccessTimeFilledIcon />
+                <span>
+                  Thời lượng{" "}
+                  <strong>{detailCourseConstants.general.totalTime}</strong>
+                </span>
+              </p>
+              <p>
+                <ChargingStationIcon />
+                Học mọi lúc, mọi nơi
+              </p>
+            </div>
+          </div>
+
           <h2 className="content__subTitle">Bạn sẽ học được gì?</h2>
           <div className="advantages">
             {detailCourseConstants.getting.map((get, index) => {
@@ -72,7 +121,48 @@ const DetailCoursePage: React.FC = () => {
         </div>
       </div>
       <div className="general">
-        <h2>Tesss</h2>
+        <div className="general__wrapper">
+          <div className="general__introduce">
+            <img src={detailCourseConstants.general.thumbnail} alt="" />
+            <PlayCircleIcon />
+            <p>Xem giới thiệu khóa học</p>
+          </div>
+          <div className="general__register">
+            <button>ĐĂNG KÝ HỌC</button>
+          </div>
+          <div className="general__detail">
+            <p>
+              <WorkspacePremiumIcon />
+              <span>
+                Trình độ{" "}
+                <strong>
+                  {detailCourseConstants.general.level == 1 && "cơ bản"}
+                  {detailCourseConstants.general.level == 2 && "bình thường"}
+                  {detailCourseConstants.general.level == 3 && "nâng cao"}
+                </strong>
+              </span>
+            </p>
+            <p>
+              <VideocamIcon />
+              <span>
+                Tổng số{" "}
+                <strong>{detailCourseConstants.general.totalParts}</strong> bài
+                học
+              </span>
+            </p>
+            <p>
+              <AccessTimeFilledIcon />
+              <span>
+                Thời lượng{" "}
+                <strong>{detailCourseConstants.general.totalTime}</strong>
+              </span>
+            </p>
+            <p>
+              <ChargingStationIcon />
+              Học mọi lúc, mọi nơi
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
