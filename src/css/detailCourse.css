@@ -1,0 +1,121 @@
+.detailCourse {
+    @apply grid grid-cols-12 gap-10 mt-6;
+}
+
+.detailCourse .content {
+    @apply col-span-8;
+}
+
+.content__title {
+    @apply text-3xl font-bold my-4;
+}
+
+.content__desc {
+    @apply my-8 mb-9;
+}
+
+.content__subTitle {
+    @apply font-bold text-2xl my-4;
+}
+
+.content .advantages {
+    @apply flex flex-wrap items-center gap-6 mb-9;
+}
+
+.advantages .advantages__item {
+    @apply w-[40%] flex items-start;
+}
+
+.advantages__item svg {
+    @apply mr-4 text-orange-500;
+}
+
+.advantages__item p {
+    @apply text-base
+}
+
+.content__extend {
+    @apply flex justify-between items-center;
+}
+
+.content__extend p span {
+    @apply font-bold;
+}
+
+.content__parts {
+    @apply w-full my-4;
+}
+
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+.content__parts .content__parts-list::-webkit-scrollbar {
+    display: inline-block;
+    width: 8px;
+    max-height: 15px;
+}
+
+.content__parts .content__parts-list::-webkit-scrollbar-thumb {
+    @apply bg-orange-600;
+    border-radius: 6px; /* Bo tròn các cạnh của thanh cuộn */
+}
+
+/* .content__parts .content__parts-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Màu nền của track */    
+  
+.content__parts .item__strong {
+    @apply text-base mr-2 mb-2 px-6 py-5 text-black font-medium pr-10 rounded-md flex justify-between items-center;
+    background-color: #f5f5f5;
+}
+
+.content__parts .item__strong div {
+    @apply flex items-center;
+}
+
+.content__parts .item__strong div .item__strong-icon {
+    @apply relative w-10;
+}
+
+.content__parts .item__strong div .item__strong-icon svg {
+    @apply mr-4 text-orange-600 text-4xl absolute left-0;
+
+}
+
+.content__parts .item__strong span {
+    @apply font-normal
+}
+
+.content__parts .item__child {
+    @apply flex justify-between items-center;
+}
+
+.content__parts .item__child div {
+    @apply flex items-center;
+}
+
+.content__parts .item__child div svg {
+    @apply mr-4 text-orange-600;
+}
+
+.required {
+    @apply mb-5;
+}
+
+.required__item {
+    @apply flex items-center py-3 ;
+}
+
+.required__item svg {
+    @apply mr-4 text-orange-500;
+}
+
+.sticky-part {
+    @apply sticky top-[67px] z-30 bg-white;
+}
+
+.detailCourse .general {
+    @apply col-span-4;
+}
+
