@@ -1,0 +1,43 @@
+.learning__header {
+    @apply flex items-center justify-between bg-slate-800 fixed left-0 right-0 top-0 z-50;
+}
+
+.learning__left {
+    @apply flex items-center px-1;
+}
+
+.learning__left button {
+    @apply p-4;
+}
+
+.learning__left button  svg {
+    @apply text-white;
+}
+
+.learning__left img {
+    @apply w-8 h-8 object-cover rounded-md;
+}
+
+.learning__left h2 {
+    @apply px-4 font-bold text-white;
+}
+
+.learning__right {
+    @apply flex items-center px-8;
+}
+
+.learning__status {
+    @apply flex items-center text-white;
+}
+
+.learning__totalpart {
+    @apply px-8 text-white;
+}
+
+.learning__introduce {
+    @apply text-white;
+}
+
+/* .learning__progress {
+    border: 2px solid #fdfdfd;
+} */

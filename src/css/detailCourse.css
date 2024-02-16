@@ -46,6 +46,10 @@
     @apply w-full my-4;
 }
 
+.content__parts.learning {
+    @apply w-full;
+}
+
 
 ::-webkit-scrollbar {
    display: none;
@@ -83,12 +87,25 @@
 
 }
 
+
+.content__parts .item__strong div .item__strong-icon.learning svg {
+    @apply  !text-orange-600 text-4xl   ;
+}
+
+.content__parts .item__strong div .item__strong-icon.hidden svg {
+    @apply opacity-0;
+}
+
 .content__parts .item__strong span {
     @apply font-normal
 }
 
 .content__parts .item__child {
-    @apply flex justify-between items-center;
+    @apply flex justify-between items-center ;
+
+    &.learning {
+        @apply flex-col items-start ;
+    }
 }
 
 .content__parts .item__child div {
@@ -97,6 +114,17 @@
 
 .content__parts .item__child div svg {
     @apply mr-4 text-orange-600;
+}
+
+.div-learning {
+}
+
+.div-learning svg {
+    @apply text-base !mr-2;
+}
+
+.span-learning {
+    @apply text-xs
 }
 
 .required {
@@ -112,7 +140,7 @@
 }
 
 .sticky-part {
-    @apply sticky top-[67px] z-30 bg-white;
+    @apply sticky top-[63px] z-30 bg-white;
 }
 
 .detailCourse .general {

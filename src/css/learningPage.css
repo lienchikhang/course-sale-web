@@ -1,0 +1,83 @@
+.learningPage {
+    @apply grid grid-cols-12 gap-1;
+}
+
+.learningPage .content__right {
+    @apply col-span-9;
+}
+
+.learningPage .content__left {
+    @apply col-span-3 fixed top-[57px] right-0 w-[24%];
+}
+
+.learningPage .content__left h1 {
+    @apply px-8 py-4 text-xl font-semibold;
+}
+
+.learningPage .content__left .content__parts {
+    @apply mt-1;
+}
+
+.learningPage .video__wrapper {
+    @apply relative bg-black py-0 px-[8.5%] mt-[57px];
+}
+
+.video__wrapper .video__center {
+    @apply pt-[56.25%] relative;
+}
+
+.video__main {
+    @apply w-full h-full absolute top-0;
+}
+
+.learning__iframe {
+    @apply w-full h-full 
+}
+
+.video__thumbnail {
+    @apply w-full h-full bg-cover bg-center flex justify-center items-center;
+}
+
+.video-react__play {
+    @apply rounded-full w-16 h-16 bg-orange-500 flex justify-center items-center;
+}
+
+.video-react__play svg {
+    @apply text-5xl text-white;
+}
+
+.learningPage .learning__content {
+    @apply px-24 py-12
+}
+
+.learningPage .learning__content .content__heading {
+    @apply mb-4;
+}
+
+.learningPage .content__heading h1 {
+    @apply text-4xl font-semibold mb-3;
+}
+
+.learningPage .content__heading p {
+    @apply text-sm;
+}
+
+.learningPage .content__documents {
+    @apply py-8 text-base text-justify leading-8;
+}
+
+.learningPage .content__moreinfo {
+    @apply py-12;
+}
+
+.learningPage .content__moreinfo > p {
+    @apply text-base mb-8;
+}
+
+.learningPage .content__moreinfo ul {
+    @apply list-disc px-4
+}
+
+.learningPage .content__moreinfo ul li {
+    @apply mb-4;
+}

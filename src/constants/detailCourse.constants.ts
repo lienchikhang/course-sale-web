@@ -1,7 +1,8 @@
 const detailCourseConstants = {
     //model course
     courseId: '123', //string
-    title: 'Lập trình C++ cơ bản, nâng cao', //string
+    title: 'Lập trình C++ cơ bản, nâng cao',
+    updateAt: '153029', //string
     desc: 'Khóa học lập trình C++ từ cơ bản tới nâng cao dành cho'
         + ' người mới bắt đầu. Mục tiêu của khóa học này nhằm giúp các bạn nắm được các khái niệm'
         + ' căn cơ của lập trình, giúp các bạn có nền tảng vững chắc để chinh phục con đường trở thành'

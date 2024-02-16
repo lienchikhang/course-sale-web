@@ -1,4 +1,3 @@
-import { Container } from "@mui/system";
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "../components";
@@ -12,11 +11,9 @@ const LayoutPrimary: React.FC = () => {
         <div className="visible-div">
           <Sidebar />
         </div>
-        {/* <div className="col-span-1 visible-div"></div> */}
         <div className="col-span-12 lg:col-span-11 mt-[58px]">
           <Outlet />
         </div>
-        {/* <Outlet /> */}
       </div>
       <div className="bg-slate-950 flex flex-col">
         <Footer />
