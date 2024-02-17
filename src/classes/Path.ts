@@ -26,6 +26,10 @@ class Path {
         this.encode(path);
         return this.enPath;
     }
+
+    public addNonce() { }
+    public addTimeStamp() { }
+    public addApiKey() { }
 }
 
 export default Path;

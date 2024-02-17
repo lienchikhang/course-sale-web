@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../css/detailCourse.css";
 import detailCourseConstants from "../../constants/detailCourse.constants";
 import DoneIcon from "@mui/icons-material/Done";
@@ -9,8 +9,15 @@ import ChargingStationIcon from "@mui/icons-material/ChargingStation";
 import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import { useDispatch } from "react-redux";
+import { updateActivePage } from "../../redux/slices/page.slice";
 
 const DetailCoursePage: React.FC = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(updateActivePage('learning'));
+  }, [])
   return (
     <div className="detailCourse">
       <div className="content">

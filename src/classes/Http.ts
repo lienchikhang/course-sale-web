@@ -10,7 +10,7 @@ class Http {
 
     private constructor(public authorization?: string) {
         this.axiosInstace = axios.create({
-            baseURL: 'https://api-gateway.lckteam/',
+            baseURL: 'https://api-gateway.lckteam/api/',
             headers: {
                 Authorization: authorization,
             }

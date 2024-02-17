@@ -4,8 +4,6 @@ export interface ISideItem {
         icon: string
     },
     key: number,
-    activeTab: ISideActive | null,
-    setActiveTab: React.Dispatch<React.SetStateAction<ISideActive | null>>
 }
 
 export interface ISideActive {
